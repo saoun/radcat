@@ -4,5 +4,9 @@ Rails.application.routes.draw do
 #home
   get '/about', to: "home#about"
 
+#projects
+  get '/projects', to: "projects#index"
+  get '/projects/technology-for-social-good-research'
+
 
 end
