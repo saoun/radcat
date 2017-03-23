@@ -16,7 +16,11 @@ Rails.application.routes.draw do
   get '/projects/fundraising-and-movement-building-research', to: "projects#fundraising-and-movement-building-research"
   get '/projects/garment-workers', to: "projects#garment-workers"
   get '/projects/commslabs', to: "projects#commslabs"
-  get '/projects/transformative-media-organizing-project', to: "projects#transformative-media-organizing-project"
-  get '/projects/rightscon-2015', to "projects#rightscon-2015"
+  get '/projects/rightscon-2015', to: "projects#rightscon-2015"
+  get '/projects/vojo-brasil', to: "projects#vojo-brasil"
+  get '/projects/contratados', to: "projects#contratados"
+  get '/projects/transformative-media-organizing', to: "projects#transformative-media-organizing"
+  get '/projects/out-for-change', to: "projects#out-for-change"
+  get '/projects/media-in-action', to: "projects#media-in-action"
 
 end
