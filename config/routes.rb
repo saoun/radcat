@@ -3,6 +3,9 @@ Rails.application.routes.draw do
 
 #home
   get '/about', to: "home#about"
+  get '/contact', to: "home#contact"
+  get '/wildcats', to: "home#wildcats"
+  get '/panda-security-squad', to: "home#panda-security-squad"
 
 #projects
   get '/projects', to: "projects#index"
