@@ -1299,7 +1299,7 @@ body.boxed .header .header-inner{
 
 /* Intro Title 1*/
 .intro-title-1{
-  height: 40rem;
+  height: 50rem;
 }
 
 /* Intro Title 2 */
@@ -4937,7 +4937,7 @@ body.boxed .blog-masonry.full-width [class*="content-grid"]{
   margin-bottom: 2rem;
 }
 .title-xlarge{
-  font-size: 9rem;
+  font-size: 8rem;
   line-height: 9rem;
 }
 .title-large{
