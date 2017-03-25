@@ -5354,3 +5354,7 @@ a{
   letter-spacing: 4px;
   font-style: italic;
 }
+
+.italic {
+  font-style: italic;
+}
