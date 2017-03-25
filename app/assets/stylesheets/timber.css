@@ -5344,3 +5344,13 @@ a{
     max-width: 100%;
   }
 }
+
+.lead-font {
+  font-family: 'Oswald', sans-serif;
+}
+
+.title-font {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 4px;
+  font-style: italic;
+}
