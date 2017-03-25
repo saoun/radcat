@@ -255,6 +255,7 @@ Copyright: ThemeMountain
 }
 .tms-content-inner .tms-caption{
   position: static;
+  font-family: 'Crimson Text', serif;
 }
 .tms-content-inner.left{
   text-align: left;
