@@ -722,7 +722,7 @@ body,
 }
 .text-line-vertical:after {
   width: 1px;
-  height: 8rem;
+  height: 5rem;
   margin-top: 3rem;
   border-right: 1px solid #777;
   position: absolute;
@@ -2045,11 +2045,11 @@ body,
   font-size: 1.1rem;
   font-weight: normal;
     float: right;
-  -webkit-transform: rotate(270deg);
-     -moz-transform: rotate(270deg);
-      -ms-transform: rotate(270deg);
-       -o-transform: rotate(270deg);
-          transform: rotate(270deg);
+  // -webkit-transform: rotate(270deg);
+  //    -moz-transform: rotate(270deg);
+  //     -ms-transform: rotate(270deg);
+  //      -o-transform: rotate(270deg);
+  //         transform: rotate(270deg);
 }
 .scroll-down a{
   color: #fff;

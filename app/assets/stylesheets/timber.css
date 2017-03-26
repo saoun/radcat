@@ -5348,13 +5348,15 @@ a{
 .lead-font {
   font-family: 'Oswald', sans-serif;
 }
-
 .title-font {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 4px;
   font-style: italic;
 }
-
 .italic {
   font-style: italic;
+}
+
+.contact-size{
+  font-size: 2.5rem;
 }
