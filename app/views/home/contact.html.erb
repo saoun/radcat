@@ -32,8 +32,15 @@
         <h2 class="mb-30">Say Hello</h2>
 
         <%= form_tag action: 'send_email', class: 'contact-form' do %>
-
-          <%= text_field_tag class: 'form-email form-element large'%>
+          <div class="column width-6">
+            <%= text_field_tag 'fname', nil, class: 'form-fname form-element large', placeholder: 'Name*', tabindex: '1', :required => true%>
+          </div>
+          <div class="column width-6">
+            <%= email_field_tag 'email', nil, class: 'form-email form-element large', placeholder: 'Email*', tabindex: '1', :required => true%>
+          </div>
+          <div class="column width-12 center">
+            <%= text_area_tag 'message', nil, class: 'form-message form-element medium', placeholder: 'Message*', tabindex: '5', :required => true%>
+          </div>
           <%= submit_tag('Send Email', :class => "form-submit button medium bkg-black bkg-hover-pink color-white color-hover-white") %>
         <% end %>
         <div class="contact-form-container">
