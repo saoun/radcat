@@ -30,8 +30,17 @@
     <div class="row">
       <div class="column width-8 offset-2 center">
         <h2 class="mb-30">Say Hello</h2>
+
+        <%= form_tag action: 'send_email', class: 'contact-form' do %>
+
+          <%= text_field_tag class: 'form-email form-element large'%>
+          <%= submit_tag('Send Email', :class => "form-submit button medium bkg-black bkg-hover-pink color-white color-hover-white") %>
+        <% end %>
         <div class="contact-form-container">
-          <form class="contact-form" action="php/send-email.php" method="post" novalidate>
+
+
+
+          <!-- <form class="contact-form" action="php/send-email.php" method="post" novalidate>
             <div class="row">
               <div class="column width-6">
                 <input type="text" name="fname" class="form-fname form-element large" placeholder="Name*" tabindex="1" required>
@@ -47,7 +56,7 @@
                 <%= link_to 'Send Email', contact_form_email_path, method: :post, :class =>  "form-submit button medium bkg-black bkg-hover-pink color-white color-hover-white" %>
               </div>
             </div>
-          </form>
+          </form> -->
           <div class="form-response center"></div>
         </div>
       </div>
