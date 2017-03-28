@@ -1,9 +1,8 @@
 class ContactFormMailer < ApplicationMailer
   default from: "pumapotamus@gmail.com"
 
-  def send_email(user)
+  def send_email(user, name)
     @user = user
-    @name = "TEST"
     mail(to: @user, subject: 'New Inquiry')
   end
 end

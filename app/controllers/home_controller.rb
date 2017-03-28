@@ -5,6 +5,6 @@ class HomeController < ApplicationController
     @email = params[:email]
     @message = params[:message]
 
-    ContactFormMailer.send_email('jeffahking@gmail.com').deliver
+    ContactFormMailer.send_email('jeffahking@gmail.com', @name).deliver
   end
 end
