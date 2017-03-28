@@ -43,7 +43,8 @@
             <div class="row">
               <div class="column width-12 center">
                 <textarea name="message" class="form-message form-element medium" placeholder="Message*" tabindex="5" required></textarea>
-                <input type="submit" value="Send Email" class="form-submit button medium bkg-black bkg-hover-pink color-white color-hover-white">
+                <input type="submit" value="Send Email original" class="form-submit button medium bkg-black bkg-hover-pink color-white color-hover-white">
+                <%= link_to 'Send Email', contact_form_email_path, method: :post, :class =>  "form-submit button medium bkg-black bkg-hover-pink color-white color-hover-white" %>
               </div>
             </div>
           </form>
