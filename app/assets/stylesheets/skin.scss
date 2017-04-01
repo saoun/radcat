@@ -646,6 +646,7 @@ body,
 [class*="intro-title-"] + .section-block,
 .featured-media + .section-block{
   padding-top: 8rem;
+  padding-bottom: 11rem;
   border-top-width: 3rem;
   border-top-style: solid;
 }
@@ -669,7 +670,7 @@ body,
 }
 .section-block.replicable-content,
 .row.xlarge.replicable-content{
-  padding-top: 11rem;
+  padding-top: 8rem;
   padding-bottom: 8rem;
 }
 .section-block.slanted-top:before{
@@ -722,7 +723,7 @@ body,
 }
 .text-line-vertical:after {
   width: 1px;
-  height: 5rem;
+  height: 8rem;
   margin-top: 3rem;
   border-right: 1px solid #777;
   position: absolute;
