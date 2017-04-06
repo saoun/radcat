@@ -4041,7 +4041,7 @@ body.boxed .pagination-2{
   width: 4rem;
   height: 4rem;
   margin: 0;
-  padding: 1rem;
+/*   padding: 1rem; */
   display: block;
   border: 1px solid #ddd;
   border-radius: 50%;
