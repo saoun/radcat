@@ -1906,14 +1906,16 @@ button,
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: -webkit-transform .33s cubic-bezier(0.455,.03,.515,.955);
-  transition: transform .33s cubic-bezier(0.455,.03,.515,.955);
-  z-index: -1
+  transition: all .33s cubic-bezier(0.455,.03,.515,.955);
+  z-index: -1;
+  opacity: 0;
 }
 /* for button hover transition transform */
 .button:hover::before{
   -webkit-transform:  scaleX(1);
   transform: scaleX(1);
   color: white;
+  opacity: 1;
 }
 button,
 .button,
