@@ -1875,18 +1875,45 @@ button,
   padding: 1.3rem 2.5rem;
   margin: 0 0 1rem 0;
   font-family: inherit;
-    font-size: 1.3rem;
-    line-height: 1.4;
-    color: #666666;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: #666666;
   background-color: #eeeeee;
   border: 1px solid #eeeeee;
-    font-weight: normal;
-    vertical-align: top;
+  font-weight: normal;
+  vertical-align: top;
   display: inline-block;
   cursor: pointer;
   -webkit-appearance: none;
-     -moz-appearance: none;
-      appearance: none;
+   -moz-appearance: none;
+    appearance: none;
+  -webkit-transition: color .33s ease-in-out;
+  transition: color .33s ease-in-out;
+
+  z-index: 10;
+  position: relative;
+}
+
+.button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform .33s cubic-bezier(0.455,.03,.515,.955);
+  transition: transform .33s cubic-bezier(0.455,.03,.515,.955);
+  z-index: -1
+}
+/* for button hover transition transform */
+.button:hover::before{
+  -webkit-transform:  scaleX(1);
+  transform: scaleX(1);
+  color: white;
 }
 button,
 .button,
@@ -1904,10 +1931,11 @@ button:focus,
 }
 button:hover,
 .button:hover{
+/* original template:
   text-decoration: none;
   color: #666666;
   background-color: #d0d0d0;
-  border-color: #d0d0d0;
+  border-color: #d0d0d0; */
 }
 /* Sizes */
 button.small,
