@@ -72,6 +72,7 @@ textarea,
     font-family: 'Lato', 'Helvetica Neue', sans-serif;
 }
 
+
 /* Links */
 a,
 p a,
@@ -672,6 +673,11 @@ body,
 .row.xlarge.replicable-content{
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+// for shorter padding top, add short-top
+.section-block.replicable-content,
+.row.xlarge.replicable-content.short-top{
+  padding-top: 4rem;
 }
 .section-block.slanted-top:before{
   width: 100%;
