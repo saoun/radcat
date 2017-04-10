@@ -287,15 +287,6 @@ h4.project-title{
   font-size: 2rem;
 }
 
-.division {
-  margin-bottom: 30px;
-  border-bottom: 1px solid black;
-  color: black;
-  margin-right: 170px;
-  margin-left: 170px;
-}
-
-
 /* Title Classes */
 .title-xlarge{
   font-size: 8rem;
@@ -675,10 +666,10 @@ body,
   padding-bottom: 8rem;
 }
 // for shorter padding top, add short-top
-.section-block.replicable-content,
-.row.xlarge.replicable-content.short-top{
-  padding-top: 4rem;
-}
+// .section-block.replicable-content,
+// .row.xlarge.replicable-content, .short-top{
+//   padding-top: 4rem;
+// }
 .section-block.slanted-top:before{
   width: 100%;
   height: 12rem;
@@ -3368,3 +3359,4 @@ only screen and (       min-resolution: 2dppx) {
     background-image: url(../images/contact/contact-hero@2x.jpg);
   }
 }
+
