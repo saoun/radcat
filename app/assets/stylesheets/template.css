@@ -4056,10 +4056,10 @@ body.boxed .pagination-2{
   color: #fff;
   border: transparent;
 }
-.pagination-3 li:first-child{
+.pagination-3.float li:first-child{
   float: left;
 }
-.pagination-3 li:last-child{
+.pagination-3.float li:last-child{
   float: right;
 }
 .pagination-3 a.disabled,
