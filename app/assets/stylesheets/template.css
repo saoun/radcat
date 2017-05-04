@@ -865,7 +865,8 @@ body.boxed .header .header-inner{
 
 /* Bkg Color Header Classes */
 .header-background .header-inner{
-  background: #232323;
+  /* background: #232323; */
+  background: #fff;
 }
 .header-background .header-inner{
   /*border-bottom: 1px solid rgba(255,255,255,0);*/

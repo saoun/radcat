@@ -722,7 +722,7 @@ body,
   width: 1px;
   height: 8rem;
   margin-top: 3rem;
-  border-right: 1px solid #777;
+  border-right: 1px solid white;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -980,11 +980,11 @@ body,
 
 /* Transparent Header Initial, Hover & Current Nav Colors */
 .header-transparent .navigation > ul > li > a{
-  color: #fff;
+  color: #333333;
   opacity: 0.6;
 }
 .header-transparent .navigation > ul > li > a:hover{
-  color: #fff;
+  color: #e8361c;
   opacity: 1;
 }
 .header-transparent .navigation > ul > li.current > a,
@@ -1006,17 +1006,17 @@ body,
 
 /* Header Background Initial, Hover & Current Nav Colors - On Scroll! */
 .header-background .navigation > ul > li > a{
-  color: #999;
+  color: #333333;
 }
 .header-background .navigation > ul > li.current > a{
-  color: #000;
+  color: #e8361c;
   border-bottom: none;
 }
 .header-background .navigation > ul > li.current > a:hover{
-  color: #000;
+  color: #333333;
 }
 .header-background .navigation > ul > li > a:hover{
-  color: #000;
+  color: #e8361c;
   opacity: 1;
 }
 
