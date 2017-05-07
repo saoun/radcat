@@ -728,6 +728,16 @@ body,
   left: 50%;
   content: '';
 }
+.text-line-vertical-dark:after {
+  width: 1px;
+  height: 8rem;
+  margin-top: 3rem;
+  border-right: 1px solid #222222;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  content: '';
+}
 @media only screen and (min-width: 960px){
   .header-1-static + .content{
     padding-top: 4.4rem;
