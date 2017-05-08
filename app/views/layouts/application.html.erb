@@ -13,7 +13,14 @@
   </head>
 
   <body>
-    <%= render "home/navbar-2" %>
+    <% if current_page?('/') %>
+      <%= render "home/navbar" %>
+    <%elsif current_page?('/panda-security-squad') %>
+      <%= render "home/navbar-3" %>
+    <% else %>
+      <%= render "home/navbar-2" %>
+    <%end%>
+
     <%= yield %>
   </body>
 </html>

@@ -113,6 +113,9 @@ p a:hover,
 .footer .footer-top a:hover{
   color: #ff4556;
 }
+.scroll-to-top a:hover {
+  color: #eca348;
+}
 a[class*="icon-"]:hover{
   text-decoration: none;
 }
@@ -992,6 +995,11 @@ body,
 .header-transparent .navigation > ul > li > a{
   color: #333333;
   opacity: 0.6;
+}
+// for alternative color on navbar
+.header-transparent .navigation-2 > ul > li > a{
+  color: white;
+  opacity: 0.9;
 }
 .header-transparent .navigation > ul > li > a:hover{
   color: #e8361c;
