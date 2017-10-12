@@ -1,5 +1,5 @@
 class ContactFormMailer < ApplicationMailer
-  default from: "pumapotamus@gmail.com"
+  default from: "info@rad.cat"
 
   def send_email(user, name, email, message)
     @user = user
