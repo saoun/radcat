@@ -4,8 +4,8 @@ Rails.application.routes.draw do
 #home
   get '/about', to: "home#about"
   get '/contact', to: "home#contact"
-  get '/wildcats', to: "home#wildcats"
-  get '/panda-security-squad', to: "home#panda-security-squad"
+  get '/ourteam', to: "home#ourteam"
+  get '/ourapproach', to: "home#ourapproach"
   get '/alternate', to: "home#alternate"
   post 'contact/send-email', to: 'home#send_email', as: 'contact_form_email'
 
