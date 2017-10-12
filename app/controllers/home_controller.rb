@@ -6,7 +6,7 @@ class HomeController < ApplicationController
     @message = params[:message]
 
     ContactFormMailer.send_email('jeffahking@gmail.com', @name, @email, @message).deliver
-    flash[:notice] = 'Email Sent!'
+    # flash[:notice] = 'Email Sent!'
     redirect_to :back
   end
 end

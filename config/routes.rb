@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/ourteam', to: "home#ourteam"
   get '/ourapproach', to: "home#ourapproach"
   get '/alternate', to: "home#alternate"
+  get '/collaborators', to: "home#collaborators"
   post 'contact/send-email', to: 'home#send_email', as: 'contact_form_email'
 
 #projects
