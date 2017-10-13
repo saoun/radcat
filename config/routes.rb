@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 #projects
   get '/projects', to: "projects#index"
   get '/projects/technology-for-social-good-research', to: "projects#technology-for-social-good-research"
-  get '/projects/the-ftx-safety-reboot', to: "projects#the-ftx-safety-reboot"
+  get '/projects/ftx-safety-reboot', to: "projects#ftx-safety-reboot"
   get '/projects/worker-fatality-database', to: "projects#worker-fatality-database"
   get '/projects/votervox', to: "projects#votervox"
   get '/projects/who-pays', to: "projects#who-pays"
