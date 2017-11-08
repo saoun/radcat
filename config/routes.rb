@@ -30,4 +30,5 @@ Rails.application.routes.draw do
   get '/projects/media-in-action', to: "projects#media-in-action"
   get '/projects/health-equity', to: "projects#health-equity"
   get '/projects/mental-health-equity', to: "projects#mental-health-equity"
+  get '/projects/essie-women', to: "projects#essie-women"
 end
