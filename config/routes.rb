@@ -28,4 +28,6 @@ Rails.application.routes.draw do
   get '/projects/transformative-media-organizing', to: "projects#transformative-media-organizing"
   get '/projects/out-for-change', to: "projects#out-for-change"
   get '/projects/media-in-action', to: "projects#media-in-action"
+  get '/projects/health-equity', to: "projects#health-equity"
+  get '/projects/mental-health-equity', to: "projects#mental-health-equity"
 end
