@@ -34,4 +34,5 @@ Rails.application.routes.draw do
   get '/projects/keiser-permanente', to: "projects#keiser-permanente"
   get '/projects/stronger-communities', to: "projects#stronger-communities"
   get '/projects/shuttleworth', to: "projects#shuttleworth"
+
 end
