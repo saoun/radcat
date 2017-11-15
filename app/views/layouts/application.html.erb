@@ -13,13 +13,7 @@
   </head>
 
   <body>
-    <% if current_page?('/') %>
-      <%= render "home/navbar" %>
-    <%elsif current_page?('/garment-workers') %>
-      <%= render "home/navbar-3" %>
-    <% else %>
-      <%= render "home/navbar-2" %>
-    <%end%>
+    <%= render "home/navbar" %>
     <%= yield %>
   </body>
 </html>
