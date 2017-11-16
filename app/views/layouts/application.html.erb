@@ -13,7 +13,13 @@
   </head>
 
   <body>
-    <%= render "home/navbar" %>
+    <% if current_page?('/') %>
+      <%= render "home/navbar" %>
+    <%elsif current_page?('/commslab') && current_page?('/contratados') && current_page?('/digital-privacy-data-literacy') && current_page?('/essie-women') && current_page?('/ftx-safety-reboot') && current_page?('/media-history-timeline') && current_page?('/media-in-action') && current_page?('/technology-for-social-good-research') %>
+      <%= render "home/navbar-2" %>
+    <% else %>
+      <%= render "home/navbar-2" %>
+    <%end%>
     <%= yield %>
   </body>
 </html>
