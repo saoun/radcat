@@ -11,6 +11,8 @@ services:
       - "3000:3000"
     depends_on:
       - db
+    environment:
+      STATIC_SITE_BUILD: 1
   db:
     image: postgres:latest
     environment:
