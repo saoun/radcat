@@ -2,16 +2,16 @@ Rails.application.routes.draw do
   root to: "home#index"
 
   #home
-  get '/about', to: "home#about"
-  get '/contact', to: "home#contact"
-  get '/ourteam', to: "home#ourteam"
-  get '/ourapproach', to: "home#ourapproach"
-  get '/alternate', to: "home#alternate"
-  get '/partners', to: "home#partners"
+  get '/about/', to: "home#about"
+  get '/contact/', to: "home#contact"
+  get '/ourteam/', to: "home#ourteam"
+  get '/ourapproach/', to: "home#ourapproach"
+  get '/alternate/', to: "home#alternate"
+  get '/partners/', to: "home#partners"
   post 'contact/send-email', to: 'home#send_email', as: 'contact_form_email'
 
   #projects
-  get '/projects', to: "projects#index"
+  get '/projects/', to: "projects#index"
   get '/projects/technology-for-social-good-research', to: "projects#technology-for-social-good-research"
   get '/projects/ftx-safety-reboot', to: "projects#ftx-safety-reboot"
   get '/projects/worker-fatality-database', to: "projects#worker-fatality-database"
