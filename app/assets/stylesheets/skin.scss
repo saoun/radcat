@@ -786,9 +786,9 @@ body,
   border-bottom: none;
   /*border-bottom: 1px solid #eee;*/
 }
-.header .header-inner > .nav-bar{
-  border-bottom: 1px solid rgba(255,255,255, 0.1);
-}
+// .header .header-inner > .nav-bar{
+//   border-bottom: 1px solid rgba(255,255,255, 0.1);
+// }
 @media only screen and (min-width: 960px){
   .header .header-inner{
     padding: 0 3rem;
@@ -804,9 +804,9 @@ body,
   background-color: transparent;
   border-bottom: 1px solid transparent;
 }
-.header-transparent .header-inner > .nav-bar{
-  border-bottom: 1px solid rgba(255,255,255, 0.2);
-}
+// .header-transparent .header-inner > .nav-bar{
+//  border-bottom: 1px solid rgba(255,255,255, 0.2);
+// }
 
 /* Background Header - On Scroll! */
 .header-background .header-inner{
