@@ -650,7 +650,7 @@ body.boxed .wrapper-inner{
 .navigation.sub-menu-indicator > ul > li.contains-sub-menu > a:after,
 .navigation.sub-menu-indicator > ul > li.contains-mega-sub-menu > a:after,
 .navigation .sub-menu li.contains-sub-menu > a:after{
-  font-family: 'icomoon';
+  font-family: 'FontAwesome';
   font-size: inherit;
   font-style: normal;
   font-weight: normal;
@@ -1741,7 +1741,7 @@ select{
   padding: 1.3rem 2.5rem;
 }
 .form-select:after{
-  font-family: 'icomoon';
+  font-family: 'FontAwesome';
   font-size: 1.5rem;
   content: "\e63e";
   pointer-events: none;
@@ -4017,7 +4017,7 @@ blockquote.border.center{
 .breadcrumb li:before{
   padding-left: 1.2rem;
   padding-right: 1.2rem;
-  font-family: 'icomoon';
+  font-family: 'FontAwesome';
 }
 .breadcrumb li:after{
   content: "\e640";
@@ -4075,18 +4075,14 @@ pre code{
 */
 
 @font-face {
-  font-family: 'icomoon';
-  src:url('../fonts/entypo.eot');
-  src:url('../fonts/entypo.eot') format('embedded-opentype'),
-    url('../fonts/entypo.woff') format('woff'),
-    url('../fonts/entypo.ttf') format('truetype'),
-    url('../fonts/entypo.svg') format('svg');
+  font-family: 'FontAwesome';
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 [class^="icon-"],
 [class*=" icon-"] {
-  font-family: 'icomoon';
+  font-family: 'FontAwesome';
   speak: none;
   font-style: normal;
   font-weight: normal;
