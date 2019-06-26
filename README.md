@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
 
-Things you may want to cover:
+1. Run `bundle install`
 
-* Ruby version
+2. You'll need postgres running and accepting connections on port 5432, or edit `database.yml` to set the port
+to a different port. Then run `rake db:create`
 
-* System dependencies
+## Running locally
 
-* Configuration
+Run `rails server` to spin up the site locally.
 
-* Database creation
+## Deployment
 
-* Database initialization
+Currently, pushing to heroku will automatically build & run the site as a rails app. Working
+on pre-compiling and running as a static site instead.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
