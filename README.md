@@ -1,18 +1,15 @@
 # README
 
-## Setup
+## Running the site locally on Mac OS X
+1. Install (bundler)[bundle.io] and run `bundle install` from the repository directory.
+2. 
 
-1. Run `bundle install`
-
-2. You'll need postgres running and accepting connections on port 5432, or edit `database.yml` to set the port
-to a different port. Then run `rake db:create`
-
-## Running locally
-
-Run `rails server` to spin up the site locally.
+## Using docker
+1. Run `docker-compose up --build -d` the first time you run the site. This will build the web container. In subsequent runs you can run `docker-compose up -d`. Or to see full docker output in the terminal, run without the `-d` flag.
+2. After the web and db containers come up, you may need to init the database using `docker-compose exec web rake db:create`.
+3. Visit 0.0.0.0:3000 in your browser to see the site.
 
 ## Deployment
-
 Currently, pushing to heroku will automatically build & run the site as a rails app. Working
 on pre-compiling and running as a static site instead.
 
