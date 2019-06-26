@@ -9,25 +9,7 @@
 2. After the web and db containers come up, you may need to init the database using `docker-compose exec web rake db:create`.
 3. Visit 0.0.0.0:3000 in your browser to see the site.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Deployment
+Currently, pushing to heroku will automatically build & run the site as a rails app. Working
+on pre-compiling and running as a static site instead.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

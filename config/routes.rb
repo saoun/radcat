@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   get '/about', to: "home#about"
   get '/contact', to: "home#contact"
   get '/ourteam', to: "home#ourteam"
-  get '/ourapproach', to: "home#ourapproach"
   get '/alternate', to: "home#alternate"
   get '/partners', to: "home#partners"
   post 'contact/send-email', to: 'home#send_email', as: 'contact_form_email'
@@ -34,5 +33,8 @@ Rails.application.routes.draw do
   get '/projects/kaiser-permanente', to: "projects#kaiser-permanente"
   get '/projects/stronger-communities', to: "projects#stronger-communities"
   get '/projects/shuttleworth', to: "projects#shuttleworth"
+  get '/projects/oral-health', to: "projects#oral-health"
+  get '/projects/anti-displacement', to: "projects#anti-displacement"
+
 
 end
