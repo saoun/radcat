@@ -7,17 +7,27 @@
     font-size: 3.5rem;
     font-style: italic;
     font-weight: 700;
-    height: 8rem;
-    line-height: 8rem;
     text-transform: uppercase;
     transition-property: line-height, opacity;
     transition-duration: 500ms;
+    position: absolute;
+  }
+}
+/* Intial Height */
+.logo-text {
+  a {
+    height: 8rem;
+    line-height: 8rem;
   }
 }
 
+/* Compacted Height */
 .header-compact .logo-text {
   a {
     height: 6rem;
     line-height: 6rem;
+
+    /* Hide animation */
+    opacity: 0;
   }
 }
