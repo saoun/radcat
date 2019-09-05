@@ -66,3 +66,14 @@
     }
   }
 }
+
+body.mobile {
+  /* Only display text on mobile */
+  .header {
+    .nav-bar {
+      .logo {
+        display: none;
+      }
+    }
+  }
+}

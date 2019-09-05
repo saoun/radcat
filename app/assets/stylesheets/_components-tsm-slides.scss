@@ -1,0 +1,8 @@
+// This is the Hero Section component
+.tms-slides {
+  @media only screen and (max-width: 768px) {
+    .tms-caption {
+      white-space: normal !important;
+    }
+  }
+}
