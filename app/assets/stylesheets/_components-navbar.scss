@@ -1,0 +1,23 @@
+.logo-text {
+  float: left;
+
+  a {
+    color: #333333;
+    font-family: "Oswald", sans-serif;
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: 700;
+    height: 8rem;
+    line-height: 8rem;
+    text-transform: uppercase;
+    transition-property: line-height, opacity;
+    transition-duration: 500ms;
+  }
+}
+
+.header-compact .logo-text {
+  a {
+    height: 6rem;
+    line-height: 6rem;
+  }
+}
