@@ -50,9 +50,10 @@
   <div class="wrapper-inner">
 
     <!-- Header -->
+    <% classes = "" if local_assigns[:classes].nil? %>
     <header class="header header-fixed header-fixed-on-mobile header-transparent" data-bkg-threshold="100" data-compact-threshold="100">
       <div class="header-inner">
-        <div class="row collapse full-width nav-bar reveal-side-navigation">
+        <div class="row collapse full-width nav-bar reveal-side-navigation <%= classes %>">
           <div class="column width-12 nav-bar-inner">
             <div class="logo-wrapper">
               <div class="logo-text">

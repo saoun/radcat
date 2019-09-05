@@ -37,6 +37,20 @@
         display: none;
       }
     }
+
+    /* white mode */
+    &--white {
+      ul > li > a {
+        color: white;
+        opacity: 0.9;
+      }
+
+      .logo-text {
+        a {
+          color: #ffffff;
+        }
+      }
+    }
   }
 }
 
