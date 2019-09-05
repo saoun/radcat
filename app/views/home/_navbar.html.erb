@@ -1,107 +1,56 @@
-<!-- Overlay Navigation Menu -->
-
-<div class="overlay-navigation-wrapper" data-no-scrollbar data-animation="scale-in">
-  <div class="overlay-navigation-scroll-pane">
-    <div class="overlay-navigation-inner">
-      <div class="v-align-middle">
-        <div class="overlay-navigation-header row collapse full-width">
-          <div class="column width-12">
-
-            <div class="navigation-hide overlay-nav-hide">
-              <a href="#">
-                <span class="icon-cancel"></span>
-              </a>
+<!-- Header -->
+<% classes = "" if local_assigns[:classes].nil? %>
+<header class="header header-fixed header-fixed-on-mobile header-transparent" data-bkg-threshold="100" data-compact-threshold="100">
+  <div class="header-inner">
+    <div class="row collapse full-width nav-bar reveal-side-navigation <%= classes %>">
+      <div class="column width-12 nav-bar-inner">
+        <div class="logo-wrapper">
+          <div class="logo-text">
+            <a href="/">
+              <span class="full-text">Research Action Design</span>
+              <span class="short-text">RAD</span>
+            </a>
+          </div>
+          <div class="logo">
+            <div class="logo-inner">
+              <a href="/"><img src="<%=asset_path('rad-logo.png')%>"></a>
             </div>
-
           </div>
         </div>
-        <div class="row collapse full-width">
-          <div class="column width-12">
-            <nav class="overlay-navigation pull-left clear-float-on-mobile">
-              <span class="menu-title">Pages</span>
-              <ul>
-                <li>
-                  <a href="/" class="contains-sub-menu">Home</a>
-                </li>
-                <li>
-                  <a href="/ourteam" class="contains-sub-menu">Our Team</a>
-                </li>
-                <li>
-                  <a href="/projects" class="contains-sub-menu">Projects</a>
-                </li>
-                <li>
-                  <a href="/partners" class="contains-sub-menu">Partners</a>
-                </li>
-                <li>
-                  <a href="/contact" class="contains-sub-menu">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        </div>
+        <nav class="navigation nav-block secondary-navigation nav-right">
+          <ul>
+            <li class="aux-navigation hide">
+              <!-- Aux Navigation -->
+              <a href="#" class="navigation-show overlay-nav-show nav-icon">
+                <span class="fas fa-bars"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="navigation nav-block primary-navigation nav-right">
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/ourteam">Our Team</a>
+            </li>
+            <li>
+              <a href="/projects">Projects</a>
+            </li>
+            <li>
+              <a href="/partners">Partners</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>
-</div>
-<!-- Overlay Navigation Menu End -->
-
-<div class="wrapper reveal-side-navigation">
-  <div class="wrapper-inner">
-
-    <!-- Header -->
-    <% classes = "" if local_assigns[:classes].nil? %>
-    <header class="header header-fixed header-fixed-on-mobile header-transparent" data-bkg-threshold="100" data-compact-threshold="100">
-      <div class="header-inner">
-        <div class="row collapse full-width nav-bar reveal-side-navigation <%= classes %>">
-          <div class="column width-12 nav-bar-inner">
-            <div class="logo-wrapper">
-              <div class="logo-text">
-                <a href="/">
-                  <span class="full-text">Research Action Design</span>
-                  <span class="short-text">RAD</span>
-                </a>
-              </div>
-              <div class="logo">
-                <div class="logo-inner">
-                  <a href="/"><img src="<%=asset_path('rad-logo.png')%>"></a>
-                </div>
-              </div>
-            </div>
-            <nav class="navigation nav-block secondary-navigation nav-right">
-              <ul>
-                <li class="aux-navigation hide">
-                  <!-- Aux Navigation -->
-                  <a href="#" class="navigation-show overlay-nav-show nav-icon">
-                    <span class="fas fa-bars"></span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <nav class="navigation nav-block primary-navigation nav-right">
-              <ul>
-                <li>
-                  <a href="/">Home</a>
-                </li>
-                <li>
-                  <a href="/ourteam">Our Team</a>
-                </li>
-                <li>
-                  <a href="/projects">Projects</a>
-                </li>
-                <li>
-                  <a href="/partners">Partners</a>
-                </li>
-                <li>
-                  <a href="/contact">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Header End -->
+</header>
+<!-- Header End -->
 
 <!-- Back Top -->
 <div class="scroll-to-top">

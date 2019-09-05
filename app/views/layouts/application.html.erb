@@ -14,13 +14,18 @@
   </head>
 
   <body>
-    <% if current_page?('/') %>
-      <%= render partial: "home/navbar" %>
-    <%elsif current_page?('/commslab') && current_page?('/contratados') && current_page?('/digital-privacy-data-literacy') && current_page?('/essie-women') && current_page?('/ftx-safety-reboot') && current_page?('/media-history-timeline') && current_page?('/media-in-action') && current_page?('/technology-for-social-good-research') %>
-      <%= render partial: "home/navbar", locals: { classes: 'nav-bar--white' } %>
-    <% else %>
-      <%= render partial: "home/navbar", locals: { classes: 'nav-bar--white' } %>
-    <%end%>
-    <%= yield %>
+    <%= render partial: "home/overlay-menu" %>
+    <div class="wrapper reveal-side-navigation">
+      <div class="wrapper-inner">
+        <% if current_page?('/') %>
+          <%= render partial: "home/navbar" %>
+        <% elsif current_page?('/commslab') && current_page?('/contratados') && current_page?('/digital-privacy-data-literacy') && current_page?('/essie-women') && current_page?('/ftx-safety-reboot') && current_page?('/media-history-timeline') && current_page?('/media-in-action') && current_page?('/technology-for-social-good-research') %>
+          <%= render partial: "home/navbar", locals: { classes: 'nav-bar--white' } %>
+        <% else %>
+          <%= render partial: "home/navbar", locals: { classes: 'nav-bar--white' } %>
+        <% end %>
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
