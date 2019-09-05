@@ -1,8 +1,6 @@
 module ApplicationHelper
   def navbar_classes(class_name = "")
-    if current_page?('/')
-      return class_name
-    end
+    return class_name if current_page?('/')
 
     "nav-bar--white #{class_name}"
   end
