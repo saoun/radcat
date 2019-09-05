@@ -1,12 +1,14 @@
 <!-- Header -->
-<% classes = "" if local_assigns[:classes].nil? %>
+<% navbar_class = "" if local_assigns[:navbar_class].nil? %>
+<% logo_text_class = "color-white" if local_assigns[:logo_text_class].nil? %>
+
 <header class="header header-fixed header-fixed-on-mobile header-transparent" data-bkg-threshold="100" data-compact-threshold="100">
   <div class="header-inner">
-    <div class="row collapse full-width nav-bar reveal-side-navigation <%= classes %>">
+    <div class="row collapse full-width nav-bar reveal-side-navigation <%= navbar_class %>">
       <div class="column width-12 nav-bar-inner">
         <div class="logo-wrapper">
           <div class="logo-text">
-            <a href="/">
+            <a class="<%= logo_text_class %>" href="/">
               <span class="full-text">Research Action Design</span>
               <span class="short-text">RAD</span>
             </a>

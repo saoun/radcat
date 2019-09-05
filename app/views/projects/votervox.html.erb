@@ -1,65 +1,67 @@
-  <!-- Intro Title Section 1 -->
-  <div class="content clearfix">
-      <div class="tm-slider-container full-width-slider" data-parallax data-external-padding="60" data-animation="slide" data-scale-under="1140" >
-        <ul class="tms-slides">
-          <li class="tms-slide" data-image data-force-fit>
-            <div class="tms-content">
-              <div class="tms-content-inner center">
-                <div class="row">
-                  <div class="column width-12">
-                    <h1 class="tms-caption title-xlarge upcase color-red lspacing-large horizon"
-                      data-animate-in="preset:scaleOut;duration:1000ms;">
-                      VoterVOX
-                    </h1>
-                  </div>
+<% content_for(:logo_text_class) { "color-red" } %>
+
+<!-- Intro Title Section 1 -->
+<div class="content clearfix">
+    <div class="tm-slider-container full-width-slider" data-parallax data-external-padding="60" data-animation="slide" data-scale-under="1140" >
+      <ul class="tms-slides">
+        <li class="tms-slide" data-image data-force-fit>
+          <div class="tms-content">
+            <div class="tms-content-inner center">
+              <div class="row">
+                <div class="column width-12">
+                  <h1 class="tms-caption title-xlarge upcase color-red lspacing-large horizon"
+                    data-animate-in="preset:scaleOut;duration:1000ms;">
+                    VoterVOX
+                  </h1>
                 </div>
               </div>
             </div>
-          <img data-src="<%=asset_path('project4.png')%>" data-retina alt=""/>
-        </li>
+          </div>
+        <img data-src="<%=asset_path('project4.png')%>" data-retina alt=""/>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- Intro Title Section 1 End -->
+
+<!-- Intro Section -->
+<section id="brief" class="section-block">
+  <div class="row">
+    <div class="column width-6 offset-3 center horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="0.5">
+      <h2 class="mb-30">Project Brief</h2>
+      <p class="lead left project-lead">VoterVOX is a translation app that connects bilingual AAPIs with limited English proficient voters in their communities to make sure every eligible voter has access to a translated ballot and voting information, for every election.</p>
+      <ul class="social-list list-horizontal text-line-vertical-dark">
       </ul>
     </div>
   </div>
-  <!-- Intro Title Section 1 End -->
+</section>
+<!-- Intro Section End -->
 
-  <!-- Intro Section -->
-  <section id="brief" class="section-block">
-    <div class="row">
-      <div class="column width-6 offset-3 center horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="0.5">
-        <h2 class="mb-30">Project Brief</h2>
-        <p class="lead left project-lead">VoterVOX is a translation app that connects bilingual AAPIs with limited English proficient voters in their communities to make sure every eligible voter has access to a translated ballot and voting information, for every election.</p>
-        <ul class="social-list list-horizontal text-line-vertical-dark">
-        </ul>
+<!-- Identity Section -->
+<section class="section-block replicable-content">
+  <div class="row">
+    <div class="column width-8 offset-2 horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="0.5">
+      <p>VoterVOX is a translation app that connects bilingual AAPIs with limited English proficient voters in their communities to make sure every eligible voter has access to a translated ballot and voting information, for every election. In addition to connecting volunteers and voters, VoterVOX assists voters in ordering a mail-in ballot and is also a dynamic resource that builds on the previous efforts of translators to make voting possible for millions of citizens who face language barriers or feel intimidated by the process of exercising their rights.<br>(<a href="http://www.votervox.org/about/" target="_blank">)Source</a>.</p>
+      <div class="thumbnail center">
+        <img src="<%=asset_path('votervox.png')%>" alt="">
       </div>
-    </div>
-  </section>
-  <!-- Intro Section End -->
-
-  <!-- Identity Section -->
-  <section class="section-block replicable-content">
-    <div class="row">
-      <div class="column width-8 offset-2 horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;" data-threshold="0.5">
-        <p>VoterVOX is a translation app that connects bilingual AAPIs with limited English proficient voters in their communities to make sure every eligible voter has access to a translated ballot and voting information, for every election. In addition to connecting volunteers and voters, VoterVOX assists voters in ordering a mail-in ballot and is also a dynamic resource that builds on the previous efforts of translators to make voting possible for millions of citizens who face language barriers or feel intimidated by the process of exercising their rights.<br>(<a href="http://www.votervox.org/about/" target="_blank">)Source</a>.</p>
-        <div class="thumbnail center">
-          <img src="<%=asset_path('votervox.png')%>" alt="">
-        </div>
-        <br><br>
-        <p>RAD is collaborating with 18 Million Rising (18MR) to develop and facilitate codesign workshops with AAPI voters and translators in cities across the US to engage the same voters and translators who will be using VoterVOX as codesigners of VoterVOX to determine just how VoterVOX should work.</p>
-        <p>18 Million Rising (18MR) 18MR was founded to promote AAPI civic engagement, influence, and movement by leveraging the power of technology and social media. For the past three years, we’ve convened a network of creative, tech-savvy, and passionate individuals and organizations working in and with AAPI communities in every U.S. state and territory. Our vision of engaged AAPI communities began with, but doesn’t end with, the ballot box: it also includes year-round civic activity locally and nationally, holding corporations accountable, building interracial coalitions, and developing our shared identities. More about 18MR: <a href="http://18millionrising.org" target="_blank">http://18millionrising.org</a></p>
-      </div>
-    </div>
-  </section>
-  <!-- Identity Section End -->
-
-  <!-- Pagination Section 3 -->
-  <div class="section-block pagination-3 float">
-    <div class="row">
-      <div class="column width-12">
-        <ul>
-          <li><a class="pagination-previous" href="/projects/worker-fatality-database"><i class="fa fa-angle-left icon-left-open-mini color-charcoal color-hover-white" aria-hidden="true"></i></a></li>
-          <li><a class="pagination-next" href="/projects/who-pays"><i class="fa fa-angle-right icon-right-open-mini color-charcoal color-hover-white" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
+      <br><br>
+      <p>RAD is collaborating with 18 Million Rising (18MR) to develop and facilitate codesign workshops with AAPI voters and translators in cities across the US to engage the same voters and translators who will be using VoterVOX as codesigners of VoterVOX to determine just how VoterVOX should work.</p>
+      <p>18 Million Rising (18MR) 18MR was founded to promote AAPI civic engagement, influence, and movement by leveraging the power of technology and social media. For the past three years, we’ve convened a network of creative, tech-savvy, and passionate individuals and organizations working in and with AAPI communities in every U.S. state and territory. Our vision of engaged AAPI communities began with, but doesn’t end with, the ballot box: it also includes year-round civic activity locally and nationally, holding corporations accountable, building interracial coalitions, and developing our shared identities. More about 18MR: <a href="http://18millionrising.org" target="_blank">http://18millionrising.org</a></p>
     </div>
   </div>
-  <!-- Pagination Section 3 End -->
+</section>
+<!-- Identity Section End -->
+
+<!-- Pagination Section 3 -->
+<div class="section-block pagination-3 float">
+  <div class="row">
+    <div class="column width-12">
+      <ul>
+        <li><a class="pagination-previous" href="/projects/worker-fatality-database"><i class="fa fa-angle-left icon-left-open-mini color-charcoal color-hover-white" aria-hidden="true"></i></a></li>
+        <li><a class="pagination-next" href="/projects/who-pays"><i class="fa fa-angle-right icon-right-open-mini color-charcoal color-hover-white" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Pagination Section 3 End -->

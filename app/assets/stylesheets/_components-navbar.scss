@@ -4,7 +4,6 @@
       float: left;
 
       a {
-        color: #333333;
         font-family: "Oswald", sans-serif;
         font-size: 3.5rem;
         font-style: italic;
@@ -37,20 +36,6 @@
         display: none;
       }
     }
-
-    /* white mode */
-    &--white {
-      ul > li > a {
-        color: white;
-        opacity: 0.9;
-      }
-
-      .logo-text {
-        a {
-          color: #ffffff;
-        }
-      }
-    }
   }
 }
 
@@ -73,6 +58,12 @@ body.mobile {
     .nav-bar {
       .logo {
         display: none;
+      }
+
+      .logo-text {
+        a {
+          color: #333333;
+        }
       }
     }
   }
