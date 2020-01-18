@@ -14,13 +14,13 @@
   </head>
 
   <body>
-    <% if current_page?('/') %>
-      <%= render "home/navbar" %>
-    <%elsif current_page?('/commslab') && current_page?('/contratados') && current_page?('/digital-privacy-data-literacy') && current_page?('/essie-women') && current_page?('/ftx-safety-reboot') && current_page?('/media-history-timeline') && current_page?('/media-in-action') && current_page?('/technology-for-social-good-research') %>
-      <%= render "home/navbar-2" %>
-    <% else %>
-      <%= render "home/navbar-2" %>
-    <%end%>
-    <%= yield %>
+    <div class="wrapper reveal-side-navigation">
+      <div class="wrapper-inner">
+        <%= render partial: "home/navbar", locals: { navbar_class: navbar_classes, logo_text_class: content_for(:logo_text_class)} %>
+        <%= yield %>
+      </div>
+    </div>
+
+    <%= render partial: "home/overlay-menu" %>
   </body>
 </html>

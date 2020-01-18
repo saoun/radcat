@@ -1,0 +1,17 @@
+.overlay-navigation {
+  .overlay-navigation-links {
+    & > li > a {
+      color: white;
+      font-family: "Oswald", sans-serif;
+      font-size: 3rem;
+      font-style: italic;
+      padding: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+
+      &:hover {
+        color: darken(white, 25%);
+      }
+    }
+  }
+}
